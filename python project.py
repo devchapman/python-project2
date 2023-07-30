@@ -20,7 +20,8 @@ class Garage():
     
     def leaveGarage(self):
         if self.currentTicket['paid'] == True:
-            parkingspace += 1:
             parkingspace += 1
             print("Thank You have a nice day!")
-        else: 
+        elif self.currentTicket['paid'] == False:
+            parkingspace -= 1
+            print("Please pay for parking.")
