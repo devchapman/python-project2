@@ -9,7 +9,7 @@ class Garage():
     def takeTicket(self):
         self.tickets -= 1
         parkingspace -= 1
-        
+      
 
     def payForParking(self):
         total_amount = input("How much are you paying for parking:")
@@ -20,9 +20,7 @@ class Garage():
     
     def leaveGarage(self):
         if self.currentTicket['paid'] == True:
+            parkingspace += 1:
             parkingspace += 1
             print("Thank You have a nice day!")
-        
-        else: self.currentTicket['paid'] == False
-        parkingspace -= 1 
-        print("You still need to pay!")
+        else: 
